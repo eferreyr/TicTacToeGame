@@ -141,7 +141,7 @@ public class TicTacToeGrid extends GridPane {
     private class ButtonHandler implements EventHandler<ActionEvent> {
         public void handle(ActionEvent e) {
             if (e.getSource() == upLeft) {
-                if (o == true) {
+                if (o) {
                     filledSquares[0][0] = 2;
                     upLeft.setText("O");
                     if (win(filledSquares, 2, 0, 0)) {
@@ -159,7 +159,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == upCent) {
-                if (o == true) {
+                if (o) {
                     filledSquares[0][1] = 2;
                     upCent.setText("O");
                     if (win(filledSquares, 2, 0, 1)) {
@@ -177,7 +177,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == upRight) {
-                if (o == true) {
+                if (o) {
                     filledSquares[0][2] = 2;
                     upRight.setText("O");
                     if (win(filledSquares, 2, 0, 2)) {
@@ -195,7 +195,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == midLeft) {
-                if (o == true) {
+                if (o) {
                     filledSquares[1][0] = 2;
                     midLeft.setText("O");
                     if (win(filledSquares, 2, 1, 0)) {
@@ -213,7 +213,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == midCent) {
-                if (o == true) {
+                if (o) {
                     filledSquares[1][1] = 2;
                     midCent.setText("O");
                     if (win(filledSquares, 2, 1, 1)) {
@@ -231,7 +231,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == midRight) {
-                if (o == true) {
+                if (o) {
                     filledSquares[1][2] = 2;
                     midRight.setText("O");
                     if (win(filledSquares, 2, 1, 2)) {
@@ -249,7 +249,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == botLeft) {
-                if (o == true) {
+                if (o) {
                     filledSquares[2][0] = 2;
                     botLeft.setText("O");
                     if (win(filledSquares, 2, 2, 0)) {
@@ -267,7 +267,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == botCent) {
-                if (o == true) {
+                if (o) {
                     filledSquares[2][1] = 2;
                     botCent.setText("O");
                     if (win(filledSquares, 2, 2, 1)) {
@@ -285,7 +285,7 @@ public class TicTacToeGrid extends GridPane {
                     }
                 }
             } else if (e.getSource() == botRight) {
-                if (o == true) {
+                if (o) {
                     filledSquares[2][2] = 2;
                     botRight.setText("O");
                     if (win(filledSquares, 2, 2, 2)) {
